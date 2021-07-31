@@ -440,8 +440,8 @@ brief_entries(
 ```
 
 ```{r}
-system("cp public_cv.Rmd ../public_cv.Rmd")
-system("cp public_cv.tex ../public_cv.tex")
-system("cp public_cv.pdf ../public_cv.pdf")
+system("cp public_cv.Rmd ../../docs/public_cv.Rmd")
+system("cp public_cv.tex ../../docs/public_cv.tex")
+system("cp public_cv.pdf ../../docs/public_cv.pdf")
 system("cp public_cv.pdf ~/Dropbox/Projects/dh_distill/public_cv.pdf")
 ```
