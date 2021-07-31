@@ -1,0 +1,363 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 8 February 2019
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,]{moderncv}
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color1}{HTML}{414141}% custom
+\definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
+
+\usepackage[scaled=0.86]{DejaVuSansMono}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\def\donothing#1{#1}
+\def\emaillink#1{#1}
+
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75,footskip=60pt]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+
+\usepackage{enumitem}
+
+% personal data
+\name{}{Drew Hughes}
+
+
+ % Phone number
+
+ % Personal website
+
+
+
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+
+
+
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+
+
+\hypertarget{professional-profile}{%
+\section{Professional Profile}\label{professional-profile}}
+
+\begin{itemize}[leftmargin = 3 cm]
+  \item Clinical Pathology resident applying machine learning to
+    complex clinical laboratory data to standardize 
+    interpretation and increase throughput 
+  
+  \item MD/PhD scientist with extensive experience developing
+    and implementing next-generation sequencing assays and
+    bioinformatic analyses
+    
+  \item Motivated by opportunities to work with 
+    multidisciplinary teams using machine learning to build
+    next-generation diagnostics and improve patient care
+    
+\end{itemize}
+
+\vspace{0 pt}
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\nopagebreak
+    \cventry{2009--2019}{MD/PhD, Molecular Genetics and Genomics}{Washington University School of Medicine}{St. Louis, MO}{}{\empty}
+    \cventry{2004--2008}{BS (\textit{summa cum laude}), Mathematics}{College of William \& Mary}{Williamsburg, VA}{}{\empty}
+
+\hypertarget{work-experience}{%
+\section{Work Experience}\label{work-experience}}
+
+\nopagebreak
+    \cventry{2019--Present}{Resident, Clinical Pathology}{Barnes-Jewish Hospital}{St. Louis, MO}{}{\begin{itemize}%
+\item Developed machine learning models to automate the 
+        interpretation of serum protein electrophoresis to 
+        promote result standardization and reduce hands-on 
+        time%
+\item Performed analysis for the clinical validation of a 
+        new molecular test 
+        (\href{https://pathologyservices.wustl.edu/services-tests/chromoseq/}{ChromoSeq})
+        and prepared the associated regulatory documentation%
+\item Worked with a multidisciplinary team to build an
+        interactive dashboard summarizing respiratory pathogen
+        test results to allow clinicians to visualize trends
+        over time%
+\end{itemize}}
+
+\vspace{10 pt}
+
+\hypertarget{research-experience}{%
+\section{Research Experience}\label{research-experience}}
+
+\nopagebreak
+    \cventry{2014--2017}{Washington University School of Medicine}{Graduate Research Thesis}{St. Louis, MO}{}{\begin{itemize}%
+\item Mapped cell type-specific \textit{cis}-regulatory elements
+        in mouse photoreceptors by performing ATAC-seq and
+        RNA-seq on FACS-purified rods and cones%
+\item Developed machine learning models to identify sequence
+        features associated with photoreceptor-specific regions
+        of open chromatin%
+\item Designed and implemented a massively parallel reporter
+        assay to test quantitative models of
+        \textit{cis}-regulatory element activity
+        \textit{in vivo} at single nucleotide resolution%
+\end{itemize}}
+    \cventry{2011}{Washington University School of Medicine}{Graduate Research Rotation}{St. Louis, MO}{}{\begin{itemize}%
+\item Used targeted single-cell sequencing to reconstruct the
+      clonal architecture of tumor specimens from patients with
+      secondary acute myeloid leukemia%
+\end{itemize}}
+    \cventry{2006--2008}{College of William \& Mary}{Undergraduate Research Thesis}{Williamsburg, VA}{}{\begin{itemize}%
+\item Characterized patterns of calcium-mediated signaling in 
+      developing excitatory and inhibitory neurons
+      \textit{in vivo} in the African clawed frog%
+\end{itemize}}
+
+\vspace{10 pt}
+
+\hypertarget{teaching-experience}{%
+\section{Teaching Experience}\label{teaching-experience}}
+
+\nopagebreak
+    \cvitem{2015, 2016}{\textbf{Washington University School of Medicine},
+    \textit{Teaching Assistant: Fundamentals of Biostatistics},
+    St. Louis, MO. }
+    \cvitem{2011}{\textbf{Washington University School of Medicine},
+    \textit{Teaching Assistant: Human Anatomy and Development},
+    St. Louis, MO. }
+
+\vspace{10 pt}
+
+\hypertarget{skills}{%
+\section{Skills}\label{skills}}
+
+\nopagebreak
+    \cvitem{}{\textbf{Data Science:} machine learning | statistical 
+     modeling | data visualization | R \{tidyverse\} 
+     \{tidymodels\} \{shiny\} \{Bioconductor\} | Bash 
+     | Python | Git | high-performance computing. }
+    \cvitem{}{\textbf{Genomics:} next-generation sequencing | nanopore 
+      sequencing | end-to-end bioinformatic  analysis | variant
+      calling | RNA-seq | ATAC-seq | ChIP-seq | massively 
+      parallel reporter assays. }
+    \cvitem{}{\textbf{Clinical Pathology:}  molecular diagnostics | 
+     clinical assay validation | clinical informatics | Epic | 
+     Cerner. }
+
+\vspace{10 pt}
+
+\hypertarget{honors-and-awards}{%
+\section{Honors and Awards}\label{honors-and-awards}}
+
+\nopagebreak
+    \cvitem{2021}{Best Abstract (Clinical and Diagnostic Immunology), American Association for Clinical Chemistry. }
+    \cvitem{2021}{Most Innovative Abstract, American Society for Histocompatibility and Immunogenetics. }
+    \cvitem{2020}{Abstract Achievement Award, American Society of Hematology. }
+    \cvitem{2020}{Best Laboratory and Genomic Medicine Grand Rounds 
+      Presentation, Department of Pathology \& Immunology,  Washington University
+      School of Medicine. }
+    \cvitem{2019}{Clinical Pathology Trainee of the Month, Department of Pathology \& Immunology,  Washington University
+      School of Medicine. }
+    \cvitem{2019}{Dr. Philip Rosenblatt Award, Department of Pathology \& Immunology,  Washington University
+      School of Medicine. }
+    \cvitem{2015}{Vision Sciences Training Grant, Department of Ophthalmology \& Visual Sciences,  Washington
+      University School of Medicine. }
+    \cvitem{2014}{Best Poster, Molecular Genetics and Genomics/Computational and 
+      Systems Biology Annual Retreat,  Washington University 
+      School of Medicine. }
+    \cvitem{2008}{Phi Beta Kappa, College of William \& Mary. }
+    \cvitem{2008}{
+    Cissy Patterson Prize, Department of Mathematics,  College of William \& Mary. }
+    \cvitem{2008}{Honors, Department of Biology,  College of William \& Mary. }
+
+\vspace{10 pt}
+
+\hypertarget{peer-reviewed-publications}{%
+\section{Peer-Reviewed Publications}\label{peer-reviewed-publications}}
+
+\nopagebreak
+    \cvitem{2021}{\textbf{Hughes AEO}, and Jackups R Jr. Clinical Decision
+    Support for Laboratory Testing. \textit{Under Review}. }
+    \cvitem{2021}{Duncavage EJ, Schroeder MC, O'Laughlin M, Wilson R, 
+      MacMillan S, Bohannon A, Kruchowski S, Garza J, Du F,
+      \textbf{Hughes AEO}, Robinson J, Hughes E, Heath SE, Baty
+      JD, Neidich J, Christopher MJ, Jacoby MA, Uy GL, Fulton 
+      RS, Miller CA, Payton JE, Link DC, Walter MJ, Westervelt 
+      P, DiPersio JF, Ley TJ, and Spencer DH. Genome Sequencing 
+      as an Alternative to Cytogenetic Analysis in Myeloid 
+      Cancers. \textit{The New England Journal of Medicine}, 
+      384(10), 924--935. PMID: 33704937. 
+      \url{https://doi.org/10.1056/NEJMoa2024534}. }
+    \cvitem{2020}{Perez-Cervantes C, Smith LA, Nadadur RD, 
+      \textbf{Hughes AEO}, Wang S, Corbo JC, Cepko C, Lonfat N,
+      and Moskowitz IP. Enhancer Transcription Identifies 
+      \textit{cis}-Regulatory Elements for Photoreceptor Cell 
+      Types. \textit{Development}, 147(3), dev184432. PMID: 
+      31915147. \url{https://doi.org/10.1242/dev.184432}. }
+    \cvitem{2020}{\textbf{Hughes AEO}, Webber DM, Wallace MA, Johnson C, 
+      Burnham CA, and Anderson NW. Comparable Detections of 
+      Viral Pathogens in Lower Respiratory Tract Specimens with 
+      the BioFire Respiratory Panel 2 and the BioFire Pneumonia 
+      Panel. \textit{Journal of Clinical Microbiology}, 
+      58(6), e00254-20. PMID: 32269103.
+      \url{https://doi.org/10.1128/JCM.00254-20}. }
+    \cvitem{2020}{Volkov LI, Kim-Han JS, Saunders LM, Poria D, 
+      \textbf{Hughes AEO}, Kefalov VJ, Parichy DM, and Corbo 
+      JC. Thyroid Hormone Receptors Mediate Two Distinct
+      Mechanisms of Long-Wavelength Vision. \textit{Proceedings 
+      of the National Academy of Sciences of the United States 
+      of America}, 117(26), 15262--15269. PMID: 32541022.
+      \url{https://doi.org/10.1073/pnas.1920086117}. }
+    \cvitem{2019}{Murphy DP, \textbf{Hughes AEO}, Lawrence KA, Myers CA, and 
+      Corbo JC. \textit{Cis}-Regulatory Basis of Sister Cell 
+      Type Divergence in the Vertebrate Retina. \textit{Elife}, 
+      8, e48216. PMID: 31633482. 
+      \url{https://doi.org/10.7554/eLife.48216}. }
+    \cvitem{2018}{\textbf{Hughes AEO}, Myers CA, and Corbo JC. A Massively 
+      Parallel Reporter Assay Reveals Context-Dependent Activity 
+      of Homeodomain Binding Sites In Vivo. 
+      \textit{Genome Research}, 28(10), 1520--1531. PMID:
+      30158147.
+      \url{https://doi.org/10.1101/gr.231886.117}. }
+    \cvitem{2017}{\textbf{Hughes AEO}, Enright JM, Myers CA, Shen SQ, and 
+      Corbo JC. Cell Type-Specific Epigenomic Analysis Reveals a 
+      Uniquely Closed Chromatin Architecture in Mouse Rod 
+      Photoreceptors. \textit{Scientific Reports}, 7, 43184.
+      PMID: 28256534. \url{https://doi.org/10.1038/srep43184}. }
+    \cvitem{2016}{Shen SQ, Myers CA, \textbf{Hughes AEO}, Byrne LC, Flannery 
+      JG, and Corbo JC. Massively Parallel \textit{cis}-Regulatory 
+      Analysis in the Mammalian Central Nervous System. 
+      \textit{Genome Research}, 26(2), 238--55. PMID: 26576614.
+      \url{https://doi.org/10.1101/gr.193789.115}. }
+    \cvitem{2015}{Young AL, Wong TN, \textbf{Hughes AEO}, Heath SE, Ley TJ,
+      Link DC, and Druley TE. Quantifying Ultra-Rare Pre-Leukemic 
+      Clones Via Targeted Error-Corrected Sequencing. 
+      \textit{Leukemia}, 29(7), 1608--11. PMID: 25644247.
+      \url{https://doi.org/10.1038/leu.2015.17}. }
+    \cvitem{2014}{\textbf{Hughes AEO}, Magrini V, Demeter R, Miller CA, 
+      Fulton R, Fulton LL, Eades WC, Elliott K, Heath S, 
+      Westervelt P, Ding L, Conrad DF, White BS, Shao J, Link 
+      DC, DiPersio JF, Mardis ER, Wilson RK, Ley TJ, Walter MJ, 
+      and Graubert TA. Clonal Architecture of Secondary Acute 
+      Myeloid Leukemia Defined by Single-Cell Sequencing.
+      \textit{PLOS Genetics}, 10(7), e1004462. PMID: 25010716.
+      \url{https://doi.org/10.1371/journal.pgen.1004462}. }
+    \cvitem{2012}{Ramos E, Levinson BT, Chasnoff S, \textbf{Hughes AEO}, 
+      Young AL, Thornton K, Li A, Vallania FL, Province M, and
+      Druley TE. Population-Based Rare Variant Detection Via 
+      Pooled Exome or Custom Hybridization Capture with or without 
+      Individual Indexing. \textit{BMC Genomics} 13, 683.
+      PMID: 23216810. 
+      \url{https://doi.org/10.1186/1471-2164-13-683}. }
+
+\vspace{10 pt}
+
+\hypertarget{presentations}{%
+\section{Presentations}\label{presentations}}
+
+\nopagebreak
+    \cvitem{2021}{\textbf{Hughes, AEO}, Farnsworth, CW, and Gronowski, AM.
+      Automated Interpretation of Serum Protein Electrophoresis.
+      Poster presentation,
+      \textit{American Association for Clinical Chemistry},
+      September 26--30, Atlanta, GA. }
+    \cvitem{2021}{\textbf{Hughes, AEO}, Montgommery, MC, Liu, C, and Weimer,
+      ET. Allele-Specific Quantification of HLA Transcript
+      Isoforms by Nanopore Long-Read Sequencing. Poster
+      presentation, \textit{American Society for
+      Histocompatibility and Immunogenetics}, September
+     27--October 1, Orlando, FL. }
+    \cvitem{2021}{\textbf{Hughes, AEO}, Farnsworth, CW, and Gronowski, A.
+      Automated Interpretation of Serum Protein Electrophoresis.
+      Poster presentation (virtual), 
+      \textit{Association for Pathology Informatics Summit},
+      May 18--21, Pittsburgh, PA. }
+    \cvitem{2020}{\textbf{Hughes, AEO}, Montgommery, MC, Liu, C, and Weimer,
+      ET. Allele-Specific HLA Expression with Nanopore Long-Read
+      Sequencing. Poster presentation (virtual), 
+      \textit{American Society of Hematology Annual Meeting},
+      December 5--8, San Diego, CA. }
+    \cvitem{2020}{\textbf{Hughes, AEO}, Webber, DM, Wallace, MA, Johnson C,
+      Burnham, CAD, and Anderson NW. Combining the BioFire 
+      Pneumonia Panel with Culture Optimizes Lower Respiratory
+      Pathogen Testing. Poster presentation (virtual), 
+      \textit{American Society for Microbiology Microbe}, July
+      17--18, Chicago, IL. }
+    \cvitem{2020}{\textbf{Hughes, AEO}, Webber, DM, Wallace, MA, Johnson C,
+      Burnham, CAD, and Anderson NW. Combining the BioFire 
+      Pneumonia Panel with Culture Optimizes Lower Respiratory
+      Pathogen Testing. Poster presentation (virtual), 
+      \textit{The Academy of Clinical Laboratory Physicians and 
+      Scientists Annual Meeting}, June 25, Iowa City, IA. }
+    \cvitem{2016}{\textbf{Hughes, AEO}, Enright, JM, Myers, CA, and Corbo,
+      JC. Nrl mediates widespread changes in the epigenomic 
+      landscape of mouse photoreceptors. Poster presentation,
+      \textit{The Biology of Genomes}, May 10--14, Cold Spring 
+      Harbor, NY. }
+
+\vspace{10 pt}
+
+\hypertarget{peer-review-activities}{%
+\section{Peer Review Activities}\label{peer-review-activities}}
+
+\nopagebreak
+    \cvitem{}{Referee: \textit{The Journal of Applied 
+    Laboratory Medicine} and \textit{Journal of Clinical 
+    Microbiology}. }
+
+
+\end{document}
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
