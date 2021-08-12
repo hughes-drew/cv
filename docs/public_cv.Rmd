@@ -188,6 +188,13 @@ brief_entries(
 tribble(
   ~ year, ~ award, ~ department,
   2021,
+    "Richard Marshall Education Award",
+    "American Association for Clinical Chemistry",
+   2021,
+    "Clinical Pathology Trainee of the Month",
+    "Department of Pathology & Immunology, Washington University
+      School of Medicine",
+  2021,
     "Best Abstract (Clinical and Diagnostic Immunology)",
     "American Association for Clinical Chemistry",
   2021,
@@ -429,9 +436,9 @@ tribble(
   ~year,
   ~entry,
   "2019-2020",
-    "Referee: \\textit{The Journal of Applied 
-    Laboratory Medicine} and \\textit{Journal of Clinical 
-    Microbiology}"
+    "Referee: \\textit{Clinical Chemistry},
+    \\textit{The Journal of Applied Laboratory Medicine}, and
+    \\textit{Journal of Clinical Microbiology}"
 ) %>%
 brief_entries(
   entry,
