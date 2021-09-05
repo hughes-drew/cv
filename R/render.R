@@ -19,3 +19,5 @@ rmarkdown::render(
     linkedin = ""
   )
 )
+
+file.copy("public/public_cv.pdf", "../../dh_distill/docs/public_cv.pdf")
