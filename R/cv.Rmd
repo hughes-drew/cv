@@ -1,7 +1,10 @@
 ---
 name: Drew Hughes
-linkedin: hughes-drew
 headcolor: 414141
+params:
+  phone: ""
+  email: ""
+  linkedin: ""
 header-includes:
    - \usepackage{enumitem}
 output:
@@ -15,6 +18,12 @@ library(tidyverse)
 library(vitae)
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+---
+phone: `r params$phone`
+email: `r params$email`
+linkedin: `r params$linkedin`
+---
 
 # Professional Profile
 \begin{itemize}[leftmargin = 3 cm]
@@ -446,11 +455,4 @@ brief_entries(
   entry,
   .protect = FALSE
 )
-```
-
-```{r}
-system("cp public_cv.Rmd ../../docs/public_cv.Rmd")
-system("cp public_cv.tex ../../docs/public_cv.tex")
-system("cp public_cv.pdf ../../docs/public_cv.pdf")
-system("cp public_cv.pdf ~/Dropbox/Projects/dh_distill/public_cv.pdf")
 ```
