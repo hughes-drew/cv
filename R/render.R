@@ -1,7 +1,7 @@
 rmarkdown::render(
   "cv.Rmd",
   output_dir = "../docs",
-  output_file = "private_cv",
+  output_file = glue::glue(as.character(Sys.Date()), "_hughes_cv"),
   params = list(
     phone = Sys.getenv("PHONE"),
     email = Sys.getenv("EMAIL"),
