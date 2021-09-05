@@ -1,6 +1,6 @@
 rmarkdown::render(
   "cv.Rmd",
-  output_dir = "private",
+  output_dir = "../docs",
   output_file = "private_cv",
   params = list(
     phone = Sys.getenv("PHONE"),
@@ -11,7 +11,7 @@ rmarkdown::render(
 
 rmarkdown::render(
   "cv.Rmd",
-  output_dir = "public",
+  output_dir = "../docs",
   output_file = "public_cv",
   params = list(
     phone = "",
