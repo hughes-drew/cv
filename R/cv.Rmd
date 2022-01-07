@@ -28,17 +28,17 @@ linkedin: `r params$linkedin`
 # Professional Profile
 \begin{itemize}[leftmargin = 3 cm]
   \item Clinical Pathology resident applying machine learning to
-    complex clinical laboratory data to standardize 
-    interpretation and increase throughput 
-  
+    complex clinical laboratory data to standardize
+    interpretation and increase throughput
+
   \item MD/PhD scientist with extensive experience developing
     and implementing next-generation sequencing assays and
     bioinformatic analyses
-    
-  \item Motivated by opportunities to work with 
+
+  \item Motivated by opportunities to work with
     multidisciplinary teams using machine learning to build
     next-generation diagnostics and improve patient care
-    
+
 \end{itemize}
 
 \vspace{0 pt}
@@ -81,7 +81,7 @@ tribble(
       "Performed analysis for the clinical validation of a 
         new molecular test 
         (\\href{https://pathologyservices.wustl.edu/services-tests/chromoseq/}{ChromoSeq})
-        and prepared the associated regulatory documentation",
+        and helped prepare the associated documentation",
       "Worked with a multidisciplinary team to build an
         interactive dashboard summarizing respiratory pathogen
         test results to allow clinicians to visualize trends
@@ -131,7 +131,7 @@ tribble(
     "College of William \\& Mary",
     "Williamsburg, VA",
     "2006--2008",
-    "Characterized patterns of calcium-mediated signaling in 
+    "Characterized patterns of calcium signaling in 
       developing excitatory and inhibitory neurons
       \\textit{in vivo} in the African clawed frog"
 ) %>%
@@ -262,9 +262,11 @@ brief_entries(
 tribble(
   ~year, ~entry,
   2021,
-    "\\textbf{Hughes AEO}, and Jackups R Jr. Clinical Decision
-    Support for Laboratory Testing. 
-    \\textit{Clinical Chemistry} (in press)",
+    "\\textbf{Hughes AEO} and Jackups R Jr. Clinical Decision
+    Support for Laboratory Testing.
+    \\textit{Clinical Chemistry}, hvab201. Epub ahead of print.
+    PMID: 34871351.
+    \\url{https://doi.org/10.1093/clinchem/hvab201}",
   2021,
     "Duncavage EJ, Schroeder MC, O'Laughlin M, Wilson R, 
       MacMillan S, Bohannon A, Kruchowski S, Garza J, Du F,
@@ -355,23 +357,20 @@ brief_entries(
 )
 ```
 
-<!-- # Book Chapters -->
-<!-- ```{r, message = FALSE, warning = FALSE} -->
-<!-- tribble( -->
-<!--   ~year, ~entry, -->
-<!--   "2021",  -->
-<!--     "Parikh B, \\textbf{Hughes AEO}, and Anderson NW. 2021. -->
-<!--     Molecular Microbiology, p. *--*. \\textit{In} Carroll KC, -->
-<!--     Pfaller MA, Landry ML, McAdam AJ, Patel R, Richter SS, and -->
-<!--     Warnock DW (ed), \\textit{Manual of Clinical Microbiology}, -->
-<!--     12th ed, ASM Press, Washington, D.C" -->
-<!-- ) %>% -->
-<!-- brief_entries( -->
-<!--   entry, -->
-<!--   year, -->
-<!--   .protect = FALSE -->
-<!-- ) -->
-<!-- ``` -->
+# Book Chapters
+```{r, message = FALSE, warning = FALSE}
+tribble(
+  ~year, ~entry,
+  "2022",
+    "Parikh B, \\textbf{Hughes AEO}, and Anderson NW. Molecular 
+    Microbiology. \\textit{In Press}"
+) %>%
+brief_entries(
+  entry,
+  year,
+  .protect = FALSE
+)
+```
 
 \vspace{10 pt}
 
@@ -380,53 +379,53 @@ brief_entries(
 tribble(
   ~year, ~entry,
   2021,
-    "\\textbf{Hughes, AEO}, Bell RC, Abel HJ, Schroeder MC, Liu
+    "\\textbf{Hughes AEO}, Bell RC, Abel HJ, Schroeder MC, Liu
     C, Duncavage EJ, and Spencer DH. Human Leukocyte Antigen
     Typing of Patients with Myeloid Malignancies by Whole Genome
     Sequencing. Oral presentation, \\textit{Association for
     Molecular Pathology Annual Meeting and Expo}, November
     16-20, Philadelphia, PA",
   2021,
-    "\\textbf{Hughes, AEO}, Farnsworth, CW, and Gronowski, AM.
+    "\\textbf{Hughes AEO}, Farnsworth CW, and Gronowski AM.
       Automated Interpretation of Serum Protein Electrophoresis.
       Poster presentation,
       \\textit{American Association for Clinical Chemistry},
       September 26--30, Atlanta, GA",
   2021,
-    "\\textbf{Hughes, AEO}, Montgommery, MC, Liu, C, and Weimer,
+    "\\textbf{Hughes AEO}, Montgommery MC, Liu C, and Weimer
       ET. Allele-Specific Quantification of HLA Transcript
       Isoforms by Nanopore Long-Read Sequencing. Poster
       presentation, \\textit{American Society for
       Histocompatibility and Immunogenetics}, September
      27--October 1, Orlando, FL",
   2021,
-    "\\textbf{Hughes, AEO}, Farnsworth, CW, and Gronowski, A.
+    "\\textbf{Hughes AEO}, Farnsworth CW, and Gronowski AM.
       Automated Interpretation of Serum Protein Electrophoresis.
       Poster presentation (virtual), 
       \\textit{Association for Pathology Informatics Summit},
       May 18--21, Pittsburgh, PA",
   2020,
-    "\\textbf{Hughes, AEO}, Montgommery, MC, Liu, C, and Weimer,
+    "\\textbf{Hughes AEO}, Montgommery MC, Liu C, and Weimer
       ET. Allele-Specific HLA Expression with Nanopore Long-Read
       Sequencing. Poster presentation (virtual), 
       \\textit{American Society of Hematology Annual Meeting},
       December 5--8, San Diego, CA",
   2020,
-    "\\textbf{Hughes, AEO}, Webber, DM, Wallace, MA, Johnson C,
-      Burnham, CAD, and Anderson NW. Combining the BioFire 
+    "\\textbf{Hughes AEO}, Webber DM, Wallace MA, Johnson C,
+      Burnham CAD, and Anderson NW. Combining the BioFire 
       Pneumonia Panel with Culture Optimizes Lower Respiratory
       Pathogen Testing. Poster presentation (virtual), 
       \\textit{American Society for Microbiology Microbe}, July
       17--18, Chicago, IL",
   2020,
-    "\\textbf{Hughes, AEO}, Webber, DM, Wallace, MA, Johnson C,
-      Burnham, CAD, and Anderson NW. Combining the BioFire 
+    "\\textbf{Hughes AEO}, Webber DM, Wallace MA, Johnson C,
+      Burnham CAD, and Anderson NW. Combining the BioFire 
       Pneumonia Panel with Culture Optimizes Lower Respiratory
       Pathogen Testing. Poster presentation (virtual), 
       \\textit{The Academy of Clinical Laboratory Physicians and 
       Scientists Annual Meeting}, June 25, Iowa City, IA",
   2016,
-    "\\textbf{Hughes, AEO}, Enright, JM, Myers, CA, and Corbo,
+    "\\textbf{Hughes AEO}, Enright JM, Myers CA, and Corbo
       JC. Nrl mediates widespread changes in the epigenomic 
       landscape of mouse photoreceptors. Poster presentation,
       \\textit{The Biology of Genomes}, May 10--14, Cold Spring 
