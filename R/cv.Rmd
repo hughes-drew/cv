@@ -423,7 +423,7 @@ tribble(
     Typing of Patients with Myeloid Malignancies by Whole Genome
     Sequencing. Oral presentation, \\textit{Association for
     Molecular Pathology Annual Meeting and Expo}, November
-    16-20, Philadelphia, PA",
+    16--20, Philadelphia, PA",
   2021,
     "\\textbf{Hughes AEO}, Farnsworth CW, and Gronowski AM.
       Automated Interpretation of Serum Protein Electrophoresis.
@@ -465,8 +465,8 @@ tribble(
       Scientists Annual Meeting}, June 25, Iowa City, IA",
   2016,
     "\\textbf{Hughes AEO}, Enright JM, Myers CA, and Corbo
-      JC. Nrl mediates widespread changes in the epigenomic 
-      landscape of mouse photoreceptors. Poster presentation,
+      JC. Nrl Mediates Widespread Changes in the Epigenomic 
+      Landscape of Mouse Photoreceptors. Poster presentation,
       \\textit{The Biology of Genomes}, May 10--14, Cold Spring 
       Harbor, NY"
 ) %>%
