@@ -202,6 +202,10 @@ brief_entries(
 ```{r, message = FALSE, warning = FALSE}
 tribble(
   ~ year, ~ award, ~ department,
+  2022,
+    "Clinical Pathology Trainee of the Month",
+    "Department of Pathology & Immunology, Washington University
+      School of Medicine",
   2021,
     "Richard Marshall Education Award",
     "American Association for Clinical Chemistry",
