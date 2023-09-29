@@ -32,129 +32,64 @@ email: `r params$email`
 linkedin: `r params$linkedin`
 ---
 
-# Professional Profile
-\begin{itemize}[leftmargin = 3 cm]
-  \item Clinical Pathology resident applying machine learning to
-    clinical laboratory data to increase throughput, standardize 
-    interpretation, and reduce errors
+# Academic Positions & Employment
+```{r, message = FALSE, warning = FALSE}
+tribble(
+  ~year, ~entry,
+  "2023--Present",
+    "\\textbf{Assistant Professor,}
+    \\textbf{Section of Molecular Oncology,}
+    \\textbf{Division of Anatomic and Molecular Pathology,}
+    \\textbf{Department of Pathology \\& Immunology,}
+    \\textit{Washington University School of Medicine},
+    St. Louis, MO"
+) %>%
+brief_entries(
+  entry,
+  year,
+  .protect = FALSE
+)
+```
 
-  \item MD/PhD scientist with extensive experience developing
-    and implementing next-generation sequencing assays and
-    bioinformatic analyses
-
-  \item Motivated by opportunities to work with
-    multidisciplinary teams using machine learning to build
-    next-generation molecular diagnostics and improve patient 
-    care
-
-\end{itemize}
-
-\vspace{0 pt}
+# Post-Graduate Training
+```{r, message = FALSE, warning = FALSE}
+tribble(
+  ~year, ~entry,
+  "2022--2023",
+    "\\textbf{Clinical Fellow, Molecular Genetic Pathology,}
+    \\textit{Washington University School of Medicine},
+    St. Louis, MO",
+  "2019--2022",
+    "\\textbf{Resident, Clinical Pathology,}
+    \\textit{Barnes-Jewish Hospital},
+    St. Louis, MO"
+) %>%
+brief_entries(
+  entry,
+  year,
+  .protect = FALSE
+)
+```
 
 # Education
 ```{r, message = FALSE, warning = FALSE}
 tribble(
-  ~degree, ~institution, ~location, ~dates,
-  "MD/PhD, Molecular Genetics and Genomics",
-    "Washington University School of Medicine",
-    "St. Louis, MO",
-    "2009--2019",
-  "BS (\\textit{summa cum laude}), Mathematics",
-    "College of William \\& Mary",
-    "Williamsburg, VA",
-    "2004--2008"
+  ~year, ~entry,
+  "2009--2019",
+    "\\textbf{MD/PhD, Molecular Genetics and Genomics,}
+    \\textit{Washington University School of Medicine}
+    St. Louis, MO",
+  "2004--2008",
+    "\\textbf{BS (\\textit{summa cum laude}), Mathematics,}
+    \\textit{College of William \\& Mary},
+    Williamsburg, VA"
 ) %>%
-detailed_entries(
-  degree,
-  dates,
-  institution,
-  location,
+brief_entries(
+  entry,
+  year,
   .protect = FALSE
 )
 ```
-
-# Work Experience
-```{r, message = FALSE, warning = FALSE}
-tribble(
-  ~position, ~institution, ~location, ~dates, ~details,
-  "Resident, Clinical Pathology",
-    "Barnes-Jewish Hospital",
-    "St. Louis, MO",
-    "2019--Present",
-    c(
-      "Developed machine learning models to automate the 
-        interpretation of serum protein electrophoresis to 
-        promote result standardization and reduce hands-on 
-        time",
-      "Performed analysis for the clinical validation of a 
-        new molecular test
-        (\\href{https://pathologyservices.wustl.edu/services-tests/chromoseq/}
-        {{\\nolinkurl{ChromoSeq}}})
-        and helped prepare the associated documentation",
-      "Worked with a multidisciplinary team to build an
-        interactive dashboard summarizing respiratory pathogen
-        test results to allow clinicians to visualize trends
-        over time"
-    )
-) %>%
-detailed_entries(
-  position,
-  dates,
-  institution,
-  location,
-  details,
-  .protect = FALSE
-)
-```
-
-\vspace{10 pt}
-
-# Research Experience
-```{r, message = FALSE, warning = FALSE}
-tribble(
-  ~position, ~institution, ~location, ~dates, ~details,
-  "Graduate Research Thesis",
-    "Washington University School of Medicine",
-    "St. Louis, MO",
-    "2014--2017",
-    c(
-      "Mapped cell type-specific \\textit{cis}-regulatory elements
-        in mouse photoreceptors by performing ATAC-seq and
-        RNA-seq on FACS-purified rods and cones",
-      "Developed machine learning models to identify sequence
-        features associated with photoreceptor-specific regions
-        of open chromatin",
-      "Designed and implemented a massively parallel reporter
-        assay to test quantitative models of
-        \\textit{cis}-regulatory element activity
-        \\textit{in vivo} at single nucleotide resolution"
-    ),
-  "Graduate Research Rotation",
-    "Washington University School of Medicine",
-    "St. Louis, MO",
-    "2011",
-    "Used targeted single-cell sequencing to reconstruct the
-      clonal architecture of tumor specimens from patients with
-      secondary acute myeloid leukemia",
-  "Undergraduate Research Thesis",
-    "College of William \\& Mary",
-    "Williamsburg, VA",
-    "2006--2008",
-    "Characterized patterns of calcium signaling in 
-      developing excitatory and inhibitory neurons
-      \\textit{in vivo} in the African clawed frog"
-) %>%
-detailed_entries(
-  institution,
-  dates,
-  position,
-  location,
-  details,
-  .protect = FALSE
-)
-```
-
-\vspace{10 pt}
 
 # Teaching Experience
 ```{r, message = FALSE, warning = FALSE}
@@ -182,17 +117,17 @@ brief_entries(
 ```{r, message = FALSE, warning = FALSE}
 tribble(
   ~entry,
-  "\\textbf{Data Science:} machine learning | statistical 
-     modeling | data visualization | R \\{tidyverse\\} 
-     \\{tidymodels\\} \\{shiny\\} \\{Bioconductor\\} | Bash 
-     | Python | SQL | Git | high-performance computing",
-  "\\textbf{Genomics:} next-generation sequencing | nanopore 
-      sequencing | end-to-end bioinformatic  analysis | variant
-      calling | RNA-seq | ATAC-seq | ChIP-seq | massively 
-      parallel reporter assays",
   "\\textbf{Clinical Pathology:}  molecular diagnostics | 
-     clinical assay validation | clinical informatics | Epic | 
-     Cerner"
+    clinical variant interpretation | assay development | 
+    assay validation | clinical informatics | Epic | Cerner",
+  "\\textbf{Genomics:} next-generation sequencing | nanopore 
+    sequencing | end-to-end bioinformatic  analysis | germline 
+    and somatic variant calling | RNA-seq | ATAC-seq | ChIP-seq 
+    | massively parallel reporter assays",
+  "\\textbf{Data Science:} machine learning | statistical 
+    modeling | data visualization | R \\{tidyverse\\} 
+    \\{tidymodels\\} \\{shiny\\} \\{Bioconductor\\} | Bash 
+    | Python | SQL | Git | high-performance computing"
 ) %>%
 brief_entries(
   entry,
@@ -206,6 +141,10 @@ brief_entries(
 ```{r, message = FALSE, warning = FALSE}
 tribble(
   ~ year, ~ award, ~ department,
+  2023,
+    "Clinical Pathology Fellow Educator of the Year",
+    "Department of Pathology & Immunology, Washington University
+      School of Medicine",
   2021,
     "Richard Marshall Education Award",
     "American Association for Clinical Chemistry",
@@ -256,10 +195,20 @@ brief_entries(
 ```{r, message = FALSE, warning = FALSE}
 tribble(
   ~year, ~entry,
-  2021,
+  2023,
+    "\\textbf{Hughes AEO}, Forbriger A, May AM, Scott MG, Char D, 
+    Farnsworth CW. Implementation of high-sensitivity troponin 
+    with a rapid diagnostic algorithm reduces emergency 
+    department length of stay for discharged patients. 
+    \\textit{Clin Biochem}. 2023 Jun;116:87--93. PMID:
+      \\href{https://pubmed.ncbi.nlm.nih.gov/37054770./}
+      {\\nolinkurl{37054770}}. doi:
+      \\href{https://doi.org/10.1016/j.clinbiochem.2023.04.003}
+      {\\nolinkurl{10.1016/j.clinbiochem.2023.04.003}}",
+  2022,
     "\\textbf{Hughes AEO} and Jackups R Jr. Clinical Decision
       Support for Laboratory Testing. \\textit{Clinical
-      Chemistry}, hvab201. Epub ahead of print. PMID:
+      Chemistry}, 68(3), 402--412. PMID:
       \\href{https://pubmed.ncbi.nlm.nih.gov/34871351/}
       {\\nolinkurl{34871351}}. doi:
       \\href{https://doi.org/10.1093/clinchem/hvab201}
@@ -409,6 +358,12 @@ brief_entries(
 ```{r, message = FALSE, warning = FALSE}
 tribble(
   ~year, ~entry,
+  2022,
+    "\\textbf{Hughes AEO}, Anderson NW, Eberly AR, and Parikh 
+    BA. Evaluating the Utility of Ct Skewness to Predict 
+    SARS-CoV-2 Epidemiological Dynamics. Poster presentation,
+    \\textit{American Society for Microbiology Clinical
+    Virology Symposium}, May 1--4, West Palm Beach, FL",
   2021,
     "\\textbf{Hughes AEO}, Bell RC, Abel HJ, Schroeder MC, Liu
     C, Duncavage EJ, and Spencer DH. Human Leukocyte Antigen
@@ -470,9 +425,12 @@ tribble(
   ~year,
   ~entry,
   "2019-2020",
-    "Referee: \\textit{Clinical Chemistry},
-    \\textit{The Journal of Applied Laboratory Medicine}, and
-    \\textit{Journal of Clinical Microbiology}"
+    "Referee: \\textit{Clinical Biochemistry},
+    \\textit{Clinical Chemistry},
+    \\textit{Frontiers},
+    \\textit{The Journal of Applied Laboratory Medicine},
+    \\textit{Journal of Clinical Microbiology}, and
+    \\textit{The Journal of Molecular Diagnostics}"
 ) %>%
 brief_entries(
   entry,

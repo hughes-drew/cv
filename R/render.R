@@ -1,3 +1,5 @@
+Sys.setenv(RSTUDIO_PANDOC="/Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools")
+
 rmarkdown::render(
   "cv.Rmd",
   output_dir = "../docs",
@@ -20,4 +22,4 @@ rmarkdown::render(
   )
 )
 
-file.copy("public/public_cv.pdf", "../../dh_distill/docs/public_cv.pdf")
+file.copy("../docs/public_cv.pdf", "../../hughes-drew.github.io/docs/public_cv.pdf", overwrite = TRUE)
